@@ -60,12 +60,15 @@ const PreguntaLayout = () => {
           >
             {quizData[currentQuestionIndex].question}
           </h2>
-          <div id="answers" className="flex flex-col md:flex-row w-80%">
+          <div
+            id="answers"
+            className="flex flex-col md:flex-row w-80% justify-center"
+          >
             {quizData[currentQuestionIndex].answers.map((answer, index) => (
               <button
                 key={index}
                 onClick={() => checkAnswer(index)}
-                className="w-45% mb-5 border border-[#219EBC] py-2 rounded"
+                className="w-45% mb-5 border border-[#219EBC] py-2 px-2 rounded mx-2"
               >
                 {answer}
               </button>
