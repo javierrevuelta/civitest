@@ -56,16 +56,16 @@ const PreguntaLayout = () => {
         <div id="quiz-container" className="m-20">
           <h2
             id="question"
-            className="text-xl text-center mb-10 p-5 border-4  border-[#232ED1]"
+            className="text-xl text-center mb-10 p-5 border-4  border-[#232ED1] rounded"
           >
             {quizData[currentQuestionIndex].question}
           </h2>
-          <div id="answers" className="flex w-80%">
+          <div id="answers" className="flex flex-col md:flex-row w-80%">
             {quizData[currentQuestionIndex].answers.map((answer, index) => (
               <button
                 key={index}
                 onClick={() => checkAnswer(index)}
-                className="w-45%"
+                className="w-45% mb-5 border border-[#219EBC] py-2 rounded"
               >
                 {answer}
               </button>
