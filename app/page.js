@@ -7,9 +7,7 @@ export default function Home() {
   return (
     <div>
       <div className="m-5 p-2 text-center text-3xl">Haz tu Test</div>
-      <div className="flex justify-center">
-        <PreguntaLayout />
-      </div>
+      <ModuloSelector />
     </div>
   );
 }
